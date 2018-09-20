@@ -5,29 +5,23 @@
 
   <title>My Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css">
 
 </head>
 
   <div class="nav">
     <header>
-      <div class = "triangle">
-        <div class = "blank-triangle 1"></div>
-        <div class = "blank-triangle 2"></div>
-      </div>
       <div class = "navhead">
-      <h1>Veomany Khammarath</h1>
+        <h1>Veomany Khammarath</h1>
       </div>
-      <nav class = "list">
+      <div class = "list">
         <ul class = "list-head">
           <li class = "dot" id = "dot1" ><a href="#about-me"></a>About Me</a></li>
           <li class = "dot" id = "dot2" >Work & Education</li>
           <li class = "dot" id = "dot3" >My Projects</li>
           <li class = "dot" id = "dot4" >Contact</li>
         </ul>
-      </nav>
-      <div class = "line-group">
-        <div class = "line 1"></div>
       </div>
     </header>
   </div>
@@ -36,7 +30,7 @@
     <a name="about-me"></a>
     <h2 class = "me">About Me</h2>
     <div class = "pic-box">
-      <img class ="pic" src="https://pucksandpaperbacks.files.wordpress.com/2017/09/f930f9f3d0bda9b80c2ab65d9349a693-6.jpg" alt="My Pic" width="300px">
+      <img class ="pic" src="https://pucksandpaperbacks.files.wordpress.com/2017/09/f930f9f3d0bda9b80c2ab65d9349a693-6.jpg" alt="My Pic">
     </div>
       <p class = "about-me-para">Welcome to my profile! My name is Veomany, and I am an aspiring developer who loves cake.</p>
   </div>
@@ -49,39 +43,22 @@
   <div class = "work-education">
     <div>
       <h2>Work Experience & Education</h2>
-      <table>
-        <tr>
-          <th>Company</th>
-          <th>Period</th>
-        </tr>
-        <tr>
-          <td>IRi Australia</td>
-          <td>March 2014 - August 2018</td>
-        </tr>
-        <tr>
-          <td>Silcar Communications</td>
-          <td>January 2013 - June 2013</td>
-        </tr>
-        </table>
-      </table>
+      <div>
+          <ul>
+            <li>IRi Australia</li>
+            <li>Silcar Communications</li>
+          </ul>
+      </div>
     </div>
   </div>
 
   <div class="projects">
     <h2>My Projects</h2>
     <div class = "project-images">
-      <div class = "box 1">
-        <img class = "proj-img" id = "zen-garden" src="images/zen-garden.png" alt="My Pic" width="300px" height="300">
-      </div>
-      <div class = "box 2">
-        <img class = "proj-img" id = "ruby-terminal" src="https://pucksandpaperbacks.files.wordpress.com/2017/09/f930f9f3d0bda9b80c2ab65d9349a693-6.jpg" alt="My Pic" width="300px">
-      </div>
-      <div class = "box 3">
+        <img class = "proj-img" id = "zen-garden" src="images/zen-garden.png" alt="My Pic">
+        <img class = "proj-img" id = "ruby-terminal" src="https://pucksandpaperbacks.files.wordpress.com/2017/09/f930f9f3d0bda9b80c2ab65d9349a693-6.jpg" alt="My Pic">
         <figcaption class = "cap">CSS - Zen Garden</figcaption>
-      </div>
-      <div class = "box 4">
         <figcaption class = "cap">Ruby - Terminal App</figcaption>
-      </div>
     </div>
 
 
@@ -90,12 +67,12 @@
   <footer>
     <div class="contact">
       <h3>Contact</h3>
-        <ul class = "icons">
-          <li>LinkedIn</li>
-          <li>Medium</li>
-          <li>GitHub</li>
-          <li>Email</li>
-        </ul>
+        <div class = "icons">
+          <i class = "images/LinkedIn.png"></i>
+          <i>Medium</i>
+          <i>GitHub</i>
+          <i>Email</i>
+        </div>
     </div>
   </footer>
 
