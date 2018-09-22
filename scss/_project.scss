@@ -1,0 +1,52 @@
+/* PROJECTS SECTION */
+.projects {
+  // background-color: $primary-bg;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  justify-items: center;
+  justify-content: center;
+  grid-column-gap: 100px;
+  grid-row-gap: 10px;
+  }
+
+.proj-img {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 750px) {
+  .project-images {
+    grid-template-columns: repeat(2, 200px);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .proj-img {
+    border: 7px solid $primary-color;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .project-images {
+    grid-template-columns: repeat(2, 100px);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .proj-img {
+    border: 5px solid $primary-color;
+    height: 100px;
+    width: 100px;
+  }
+}

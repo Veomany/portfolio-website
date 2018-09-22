@@ -2,16 +2,17 @@
 
 $hover-color: mistyrose;
 $hover-bg: white;
-$primary-color: slategray;
-$primary-bg: slategray;
+$primary-color: dimgray;
+$primary-bg: rgb(235, 232, 232);
 $on-dark-bg-color: white;
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: $primary-color;
-  // width: 100%;
-  margin-top: 0;
-  margin-left:0 ;
+  width: 100%;
+  margin: 0;
+  // margin-top: 0;
+  // margin-left: 0;
 }
 
 @media only screen and (max-width: 415px) {
@@ -19,16 +20,6 @@ body {
     font-size: 0.5em;
   }
 }
-
-header {
-  margin-top: 50px;
-}
-
-// @media only screen and (max-width: 415px) {
-//   header {
-//     margin-top: 150px;
-//   }
-// }
 
 h2 {
   font-family: 'Shadows Into Light', cursive;
@@ -49,150 +40,11 @@ h2 {
   }
 }
 
-.nav {
-   height: 1000px;
-}
-
-// @media only screen and (max-width: 750px) {
-//   .nav {
-//     font-size: 2em;
-//   }
-// }
-
-@media only screen and (max-width: 415px) {
-  .nav {
-    height: 550px;
-  }
-}
-
-.navhead {
-  // width: 100%;
-  // height: 200px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-
- h1 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 4em;
-  text-align: center;
-  margin-block-end: 0;
-  
-  &:hover {
-    color: $hover-color;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  h1 {
-    font-size: 2.5em;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  h1 {
-    font-size: 2em;
-  }
-}
-
-.list {
-  // width: 100%;
-  display: flex;
-  // align-items: flex-start;
-  justify-content: center;
-}
-
-.list-head {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  justify-content: center;
-  padding: 0;
-}
-
-@media only screen and (max-width: 750px) {
-  .list-head {
-    display: grid;
-    grid-template-columns: repeat(2, 200px);
-    grid-column-gap: 7px;
-    grid-row-gap: 7px;
-    justify-items: center;
-    justify-content: center;
-    padding: 0;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .list-head {
-    // display: grid;
-    // grid-template-columns: repeat(2, 100px);
-    // grid-column-gap: 5px;
-    // grid-row-gap: 5px;
-    // justify-items: center;
-    // justify-content: center;
-    // padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-
-.dot {
-  border-radius: 50%;
-  list-style-type: none;
-  text-align: center;
-  position: relative;
-  
-  h4 {
-    position: absolute;
-    width: 100%;
-    top: 35%;
-    z-index: 9;
-    font-size: 1.5em;
-    font-weight: lighter;
-  }
-}
-
-.dot-pic {
-  height: 300px;
-  width: 300px;
-  border-radius: 50%;
-  opacity: 0.5;
-
-  &:hover {
-    filter: blur(2px);
-    opacity: 0.7;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  .dot-pic {
-    height: 200px;
-    width: 200px;
-    font-size: 1.25em;
-  }
-
-  .dot h4 {
-    top: 35%;
-    font-size: 1em;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .dot-pic {
-    height: 100px;
-    width: 100px;
-  }
-
-  .dot h4 {
-    top: 35%;
-    font-size: 1em;
-  }
-}
+@import "nav";
+@import "aboutme";
+@import "workedu";
+@import "project";
+@import "footer";
 
 // SPACING
 .spacing {
@@ -232,154 +84,6 @@ h2 {
   }
 }
 
-
-/* ABOUT ME SECTION */
-.about-me {
-  height: 700px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(235, 232, 232);
-  // border-top: 100px solid slategray;
-}
-
-@media only screen and (max-width: 415px) {
-  .about-me {
-    height: 470px;
-  }
-}
-
-.pic {
-  border-radius: 50%;
-  // border: 10px solid $primary-color;
-  height: 300px;
-  width: 300px;
-
-  // &:hover {
-  //   border: 10px solid $hover-color;
-  // }
-}
-
-@media only screen and (max-width: 750px) {
-  .pic {
-    border: 7px solid $primary-color;
-    height: 200px;
-    width: 200px;
-    
-    &:hover {
-      border: 7px solid $hover-color;
-    }
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .pic {
-    border: 5px solid $primary-color;
-    height: 100px;
-    width: 100px;
-    
-    &:hover {
-      border: 5px solid $hover-color;
-    }
-  }
-}
-
-.about-me-para {
-  width: 400px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 415px) {
-  .about-me-para {
-    width: 200px;
-  }
-}
-
-/* WORK & EDUCATION SECTION */
-// .work-education {
-//   height: 1000px;
-// }
-
-/* PROJECTS SECTION */
-.projects {
-  background-color: rgb(235, 232, 232);
-  height: 700px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-images {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  justify-items: center;
-  justify-content: center;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  }
-
-.proj-img {
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-}
-
-@media only screen and (max-width: 750px) {
-  .project-images {
-    grid-template-columns: repeat(2, 200px);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-  }
-
-  .proj-img {
-    border: 7px solid $primary-color;
-    height: 200px;
-    width: 200px;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .project-images {
-    grid-template-columns: repeat(2, 100px);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-  }
-
-  .proj-img {
-    border: 5px solid $primary-color;
-    height: 100px;
-    width: 100px;
-  }
-}
-
-/* CONTACT SECTION */
-// footer {
-//   margin-top: 100px;
-//   margin-bottom: 20px;
-// }
-
-h3 {
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 1.5em;
-  margin: 0;
-}
-
-.contact {
-  background-color: $primary-bg;
-  text-align: center;
-  color: $on-dark-bg-color;
-}
-
-.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style-type: none;
-}
-
 /* BACK TO TOP */
 .top {
   height: 60px;
@@ -393,12 +97,12 @@ h3 {
   font-size: 0.9em;
 }
 
-.back-top {
-  position: fixed;
-  bottom: 8%;
-  left: 2%;
-  z-index: 1;
-}
+// .back-top {
+//   position: fixed;
+//   bottom: 8%;
+//   left: 2%;
+//   z-index: 1;
+// }
 
 // LINK WITHIN PAGE
 a {
