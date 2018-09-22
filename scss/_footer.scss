@@ -1,21 +1,22 @@
 /* CONTACT SECTION */
 footer {
-  background-color: gainsboro;
+  background-color: slategray;
+  color: white;
   height: 300px;
   width: 100%;
   margin-bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
 
-// .contact {
-//   padding: 0;
-// }
+  h2 {
+    margin: 1px;
+  }
+}
 
 .social-icon {
   padding: 0;
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 30px);
   grid-template-rows: repeat(1, 30px);
@@ -26,4 +27,5 @@ footer {
 .social-icon-img {
   height: 30px;
   width: 30px;
+  filter: brightness(0) invert(1);
 }

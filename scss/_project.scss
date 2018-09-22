@@ -1,51 +1,46 @@
 /* PROJECTS SECTION */
 .projects {
-  // background-color: $primary-bg;
-  height: 700px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  // h2 {
+  //   padding-bottom: 63px;
+  // }
 }
 
 .project-images {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  justify-items: center;
-  justify-content: center;
-  grid-column-gap: 100px;
-  grid-row-gap: 10px;
+    // display: flex;
+    // justify-content: center;
+    align-self: flex-end;
+    align-content: flex-end;
   }
 
 .proj-img {
-  border-radius: 50%;
+  // border-radius: 50%;
   height: 300px;
   width: 300px;
 }
 
 @media only screen and (max-width: 750px) {
-  .project-images {
-    grid-template-columns: repeat(2, 200px);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-  }
-
   .proj-img {
-    border: 7px solid $primary-color;
     height: 200px;
     width: 200px;
   }
 }
 
 @media only screen and (max-width: 415px) {
-  .project-images {
-    grid-template-columns: repeat(2, 100px);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+  .projects {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+      padding-bottom: 63px;
+    }
   }
 
   .proj-img {
-    border: 5px solid $primary-color;
     height: 100px;
     width: 100px;
   }

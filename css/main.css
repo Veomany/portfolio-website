@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Tajawal");
 body {
   font-family: "Open Sans", sans-serif;
   color: dimgray;
@@ -12,10 +12,9 @@ body {
   }
 }
 h2 {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Tajawal", sans-serif;
   font-size: 3em;
   text-align: center;
-  margin: 0;
 }
 
 @media only screen and (max-width: 750px) {
@@ -29,39 +28,14 @@ h2 {
   }
 }
 header {
-  margin-top: 50px;
-}
-
-.nav {
-  height: 1000px;
-}
-
-@media only screen and (max-width: 415px) {
-  .nav {
-    height: 550px;
-  }
-}
-.navhead {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   justify-content: center;
-}
-
-h1 {
-  font-family: "Shadows Into Light", cursive;
-  font-size: 4em;
-  text-align: center;
-  margin-block-end: 0;
-  -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  -webkit-animation-duration: 1s;
   animation-duration: 1s;
 }
-h1:hover {
-  color: mistyrose;
-}
 
-@keyframes h1 {
+@keyframes header {
   from {
     opacity: 0;
     -webkit-transform: translate3d(0, 100%, 0);
@@ -73,6 +47,50 @@ h1:hover {
     transform: translate3d(0, 0, 0);
   }
 }
+.nav {
+  height: 1000px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 415px) {
+  .nav {
+    height: 550px;
+  }
+}
+.intro-line {
+  height: 1px;
+  border-top: 3px solid dimgray;
+  margin: 2em 0;
+  margin-left: 25%;
+  margin-right: 25%;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+h1 {
+  font-family: "Tajawal", sans-serif;
+  font-size: 2em;
+  font-weight: lighter;
+  text-align: center;
+}
+h1:before, h1:after {
+  background-color: dimgray;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 15%;
+}
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
 @media only screen and (max-width: 750px) {
   h1 {
     font-size: 2.5em;
@@ -89,13 +107,8 @@ h1:hover {
 }
 
 .list-head {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  justify-items: center;
-  justify-content: center;
   padding: 0;
+  display: flex;
 }
 
 @media only screen and (max-width: 750px) {
@@ -221,68 +234,60 @@ h1:hover {
 /* WORK & EDUCATION SECTION */
 /* PROJECTS SECTION */
 .projects {
-  height: 700px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .project-images {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  justify-items: center;
-  justify-content: center;
-  grid-column-gap: 100px;
-  grid-row-gap: 10px;
+  align-self: flex-end;
+  align-content: flex-end;
 }
 
 .proj-img {
-  border-radius: 50%;
   height: 300px;
   width: 300px;
 }
 
 @media only screen and (max-width: 750px) {
-  .project-images {
-    grid-template-columns: repeat(2, 200px);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-  }
-
   .proj-img {
-    border: 7px solid dimgray;
     height: 200px;
     width: 200px;
   }
 }
 @media only screen and (max-width: 415px) {
-  .project-images {
-    grid-template-columns: repeat(2, 100px);
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
+  .projects {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects h2 {
+    padding-bottom: 63px;
   }
 
   .proj-img {
-    border: 5px solid dimgray;
     height: 100px;
     width: 100px;
   }
 }
 /* CONTACT SECTION */
 footer {
-  background-color: gainsboro;
+  background-color: slategray;
+  color: white;
   height: 300px;
   width: 100%;
   margin-bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+footer h2 {
+  margin: 1px;
 }
 
 .social-icon {
   padding: 0;
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 30px);
   grid-template-rows: repeat(1, 30px);
@@ -293,6 +298,7 @@ footer {
 .social-icon-img {
   height: 30px;
   width: 30px;
+  filter: brightness(0) invert(1);
 }
 
 .spacing {
@@ -306,7 +312,7 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .space {
