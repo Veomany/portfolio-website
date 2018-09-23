@@ -3,41 +3,34 @@
   height: 500px;
   display: flex;
   flex-direction: column;
-
-  // h2 {
-  //   padding-bottom: 63px;
-  // }
 }
 
 .project-images {
-    // display: flex;
-    // justify-content: center;
-    align-self: flex-end;
-    align-content: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
 
 .proj-img {
-  // border-radius: 50%;
   height: 300px;
   width: 300px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
+  .projects {
+    height: 300px;
+  }
+
   .proj-img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
 }
 
 @media only screen and (max-width: 415px) {
   .projects {
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-  
-    h2 {
-      padding-bottom: 63px;
-    }
+    height: 180px;
   }
 
   .proj-img {

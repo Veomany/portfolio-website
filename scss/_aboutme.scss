@@ -6,58 +6,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $primary-bg;
-  // border-top: 100px solid slategray;
-}
 
-@media only screen and (max-width: 415px) {
-  .about-me {
-    height: 470px;
+  p {
+    width: 400px;
+    text-align: center;
   }
 }
 
 .pic {
   border-radius: 50%;
-  // border: 10px solid $primary-color;
   height: 300px;
   width: 300px;
-
-  // &:hover {
-  //   border: 10px solid $hover-color;
-  // }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 770px) {
+  .about-me {
+    height: 550px;
+
+    p {
+      width: 300px;
+    }
+  }
+
   .pic {
-    border: 7px solid $primary-color;
     height: 200px;
     width: 200px;
-    
-    &:hover {
-      border: 7px solid $hover-color;
-    }
   }
 }
 
 @media only screen and (max-width: 415px) {
+  .about-me {
+    height: 430px;
+
+    p {
+      width: 200px;
+    }
+  }
+
   .pic {
-    border: 5px solid $primary-color;
     height: 100px;
     width: 100px;
-    
-    &:hover {
-      border: 5px solid $hover-color;
-    }
-  }
-}
-
-.about-me-para {
-  width: 400px;
-  text-align: center;
-}
-
-@media only screen and (max-width: 415px) {
-  .about-me-para {
-    width: 200px;
   }
 }
