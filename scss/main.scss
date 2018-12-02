@@ -4,11 +4,17 @@ $primary-color: dimgray;
 $primary-bg: rgb(235, 232, 232);
 $on-dark-bg-color: white;
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: $primary-color;
   width: 100%;
   margin: 0;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll; 
 }
 
 @media only screen and (max-width: 415px) {
@@ -92,17 +98,31 @@ h2 {
 }
 
 /* BACK TO TOP */
-.top {
-  height: 60px;
-  width: 60px;
-  background-color: lightgray;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: $on-dark-bg-color;
-  font-size: 0.6em;
-  text-align: center;
+// .top {
+//   height: 60px;
+//   width: 60px;
+//   background-color: lightgray;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: $on-dark-bg-color;
+//   font-size: 0.6em;
+//   text-align: center;
+// }
+
+.top::before {
+	border-style: solid;
+	border-width: 0.25em 0.25em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.45em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.45em;
 }
 
 .back-top {

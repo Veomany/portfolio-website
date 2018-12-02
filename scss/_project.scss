@@ -1,8 +1,10 @@
 /* PROJECTS SECTION */
 .projects {
-  height: 500px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: center;
 }
 
 .project-images {
@@ -18,10 +20,6 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .projects {
-    height: 300px;
-  }
-
   .proj-img {
     height: 150px;
     width: 150px;
@@ -29,10 +27,6 @@
 }
 
 @media only screen and (max-width: 415px) {
-  .projects {
-    height: 180px;
-  }
-
   .proj-img {
     height: 100px;
     width: 100px;

@@ -1,11 +1,12 @@
 /* ABOUT ME SECTION */
 .about-me {
-  height: 700px;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: center;
 
   p {
     width: 400px;
@@ -20,14 +21,6 @@
 }
 
 @media only screen and (max-width: 770px) {
-  .about-me {
-    height: 550px;
-
-    p {
-      width: 300px;
-    }
-  }
-
   .pic {
     height: 200px;
     width: 200px;
@@ -35,14 +28,6 @@
 }
 
 @media only screen and (max-width: 415px) {
-  .about-me {
-    height: 430px;
-
-    p {
-      width: 200px;
-    }
-  }
-
   .pic {
     height: 100px;
     width: 100px;

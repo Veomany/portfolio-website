@@ -4,6 +4,7 @@ header {
   justify-content: center;
   animation-name: fadeInUp;
   animation-duration: 1s; 
+  scroll-snap-align: start;
 }
 
 @keyframes header {
@@ -21,22 +22,8 @@ header {
 }
 
 .nav {
-   height: 1000px;
+   height: 100vh;
    width: 100%;
-}
-
-@media only screen and (max-width: 770px) {
-  .nav {
-    height: 1150px;
-    margin-top: -150px;
-  }
-}
-
-@media only screen and (max-width: 415px) {
-  .nav {
-    height: 610px;
-    margin-top: -30px;
-  }
 }
 
 .intro-line {
